@@ -49,6 +49,15 @@ This report analyzes the codebase against the strict rules provided in the proje
 - **Evidence:** `manifest.webmanifest` includes Android-specific fields (orientation, theme, standalone).
 - **Status:** ✅ **COMPLIANT**
 
+## 7. Sales Logic & Integrity
+**Rule:** "Must credit a sale... calculate accumulated numbers... reset on Wednesday."
+- **Analysis:** `WealthManagementService.js` implements a dedicated `getRecentWednesday` algorithm.
+- **Evidence:**
+  - **Atomicity:** Uses Firestore Transactions to ensure counts are accurate even if multiple sales happen simultaneously.
+  - **Modularity:** Date calculation is separated from database storage logic.
+  - **Clarity:** Comments explain the day-index math (0=Sun, 3=Wed) for future maintainers.
+- **Status:** ✅ **COMPLIANT**
+
 ---
 
 ## Conclusion
