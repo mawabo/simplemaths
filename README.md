@@ -10,13 +10,16 @@ If you are new to this system, follow these guides in order:
 1. **[Android Deployment Guide](ANDROID_GUIDE.md)**
    *Read this if you want to install the app on a phone.*
 
-2. **[Maintenance & Update Guide](MAINTENANCE_GUIDE.md)**
+2. **[Deployment Guide (Get Online)](DEPLOYMENT_GUIDE.md)**
+   *Read this to host the website and backend server.*
+
+3. **[Maintenance & Update Guide](MAINTENANCE_GUIDE.md)**
    *Read this if you need to update the code or fix a bug.*
 
-3. **[Security Plan](SECURITY_PLAN.md)**
+4. **[Security Plan](SECURITY_PLAN.md)**
    *Read this to understand how we protect the data and the Master Key system.*
 
-4. **[Compliance Report](COMPLIANCE_REPORT.md)**
+5. **[Compliance Report](COMPLIANCE_REPORT.md)**
    *Read this to verify that the code meets all security and architectural rules.*
 
 ---
