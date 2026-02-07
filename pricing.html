@@ -489,6 +489,7 @@ input[type="checkbox"] {
 .main-navigation .main-nav ul li.current-menu-item a {
     color: var(--zh-accent);
 }		</style>
+<link rel="stylesheet" href="fix.css">
 		</head>
 
 <body class="wp-singular page-template-default page page-id-114 wp-embed-responsive wp-theme-generatepress no-sidebar nav-below-header separate-containers header-aligned-left dropdown-click dropdown-click-menu-item full-width-content" itemtype="https://schema.org/WebPage" itemscope>
@@ -571,88 +572,121 @@ input[type="checkbox"] {
 <h2 class="text-black text-center mb-2">Pick the Plan That Fits Your Clinic</h2>
 <p class="text-center mb-5">Whether you work alone or have a team, we have a setup that grows with you. All<br />
                 plans include our 90-Day Risk-Free Guarantee.</p>
-<p>            <!-- Plans Grid --></p>
-<div class="grid-2 mb-5">
-<p>                <!-- Category 1: Standard --></p>
-<div class="pricing-category">
-<h3 class="text-black text-center mb-4">CATEGORY 1: START SIMPLE (Standard)</h3>
-<p>                    <!-- Plan A --></p>
-<div class="pricing-card bg-black text-white mb-4">
-<h4 class="text-accent">Plan A: Solo Standard</h4>
-<div class="price">R5,000 <span class="text-white">Setup</span></div>
-<p class="text-sm">R15 / patient monthly fee</p>
-<ul class="styled-list text-sm">
-<li>Automatic payment collection</li>
-<li>Digital medical records</li>
-<li>Patient booking system</li>
-<li><strong>1 Year Agreement</strong></li>
-</ul>
-<p>                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Solo Standard"
+<p>            <!-- Plans Detailed Layout --></p>
+
+            <h3 class="text-black text-center mb-5 uppercase tracking-widest">CATEGORY 1: START SIMPLE (Standard)</h3>
+
+            <!-- Plan A -->
+            <div class="pricing-row">
+                <div class="grid-2">
+                    <div class="plan-description">
+                        <img src="https://placehold.co/600x400/000000/cfff04?text=Solo+Standard" alt="Solo Standard" class="plan-image">
+                        <h3 class="text-black">Solo Standard</h3>
+                        <p>Perfect for independent practitioners who want to start their own subscription-based practice. Get all the essential tools to automate your billing and manage your patients with ease.</p>
+                    </div>
+                    <div class="pricing-card bg-black text-white">
+                        <h4 class="text-accent">Plan A: Solo Standard</h4>
+                        <div class="price">R5,000 <span class="text-white">Setup</span></div>
+                        <p class="text-sm">R15 / patient monthly fee</p>
+                        <ul class="styled-list text-sm">
+                            <li>Automatic payment collection</li>
+                            <li>Digital medical records</li>
+                            <li>Patient booking system</li>
+                            <li><strong>1 Year Agreement</strong></li>
+                        </ul>
+                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Solo Standard"
                             data-price="5000">Select Plan</button>
                     </div>
-<p>                    <!-- Plan B --></p>
-<div class="pricing-card bg-black text-white">
-<h4 class="text-accent">Plan B: Clinic Standard</h4>
-<div class="price">R5,000 <span class="text-white">Base Setup</span></div>
-<p class="text-sm">+ R3,750 per extra doctor</p>
-<div class="doctor-count-wrapper mb-3">
-                            <label class="text-white">Number of Extra Doctors:</label><br />
+                </div>
+            </div>
+
+            <!-- Plan B -->
+            <div class="pricing-row">
+                <div class="grid-2">
+                    <div class="plan-description">
+                        <img src="https://placehold.co/600x400/000000/cfff04?text=Clinic+Standard" alt="Clinic Standard" class="plan-image">
+                        <h3 class="text-black">Clinic Standard</h3>
+                        <p>Designed for small clinics with multiple healthcare providers. Streamline your entire clinic's operations with centralized management and staff access controls.</p>
+                    </div>
+                    <div class="pricing-card bg-black text-white">
+                        <h4 class="text-accent">Plan B: Clinic Standard</h4>
+                        <div class="price">R5,000 <span class="text-white">Base Setup</span></div>
+                        <p class="text-sm">+ R3,750 per extra doctor</p>
+                        <div class="doctor-count-wrapper mb-3">
+                            <label class="text-white">Number of Extra Doctors:</label>
                             <input type="number" min="0" value="0" class="doctor-input p-2 rounded text-black w-100"
-                                data-base="5000" data-per="3750"></p>
-<p class="text-accent mt-2">Total Setup: <span class="dynamic-total">R5,000</span></p>
-</p></div>
-<ul class="styled-list text-sm">
-<li>Central control for all doctors</li>
-<li>Staff management features</li>
-<li>Medical records &#038; video tools</li>
-<li><strong>1 Year Agreement</strong></li>
-</ul>
-<p>                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Clinic Standard"
+                                data-base="5000" data-per="3750">
+                            <p class="text-accent mt-2">Total Setup: <span class="dynamic-total">R5,000</span></p>
+                        </div>
+                        <ul class="styled-list text-sm">
+                            <li>Central control for all doctors</li>
+                            <li>Staff management features</li>
+                            <li>Medical records & video tools</li>
+                            <li><strong>1 Year Agreement</strong></li>
+                        </ul>
+                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Clinic Standard"
                             data-price="5000" data-is-dynamic="true">Select Plan</button>
                     </div>
-</p></div>
-<p>                <!-- Category 2: Enterprise --></p>
-<div class="pricing-category">
-<h3 class="text-black text-center mb-4">CATEGORY 2: BUILD FOR FUTURE (Premium)</h3>
-<p>                    <!-- Plan C --></p>
-<div class="pricing-card featured bg-black text-white mb-4"
-                        style="border: 2px solid var(--zh-accent);"></p>
-<div class="badge bg-accent text-black px-3 py-1 rounded absolute top-0 right-0 m-3 font-bold"
+                </div>
+            </div>
+
+            <h3 class="text-black text-center mt-5 mb-5 uppercase tracking-widest">CATEGORY 2: BUILD FOR FUTURE (Enterprise)</h3>
+
+            <!-- Plan C -->
+            <div class="pricing-row">
+                <div class="grid-2">
+                    <div class="plan-description">
+                        <img src="https://placehold.co/600x400/000000/cfff04?text=Solo+Enterprise" alt="Solo Enterprise" class="plan-image">
+                        <h3 class="text-black">Solo Enterprise</h3>
+                        <p>The ultimate solution for established solo practices. Enjoy premium support, custom integrations, and five years of price protection to ensure your practice's long-term success.</p>
+                    </div>
+                    <div class="pricing-card featured bg-black text-white">
+                        <div class="badge bg-accent text-black px-3 py-1 rounded font-bold"
                             style="position:absolute; top:-15px; right:20px;">Most Popular</div>
-<h4 class="text-accent">Plan C: Solo Enterprise</h4>
-<div class="price">R7,900 <span class="text-white">Setup</span></div>
-<p class="text-sm">R15 / patient (Frozen for 5 Years)</p>
-<ul class="styled-list text-sm">
-<li><strong>Free Custom Setup &#038; Integrations</strong></li>
-<li>Price Protection (5 Years)</li>
-<li>90-Day Money-Back Guarantee</li>
-<li><strong>5 Year Agreement</strong></li>
-</ul>
-<p>                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Solo Enterprise"
+                        <h4 class="text-accent">Plan C: Solo Enterprise</h4>
+                        <div class="price">R7,900 <span class="text-white">Setup</span></div>
+                        <p class="text-sm">R15 / patient (Frozen for 5 Years)</p>
+                        <ul class="styled-list text-sm">
+                            <li><strong>Free Custom Setup & Integrations</strong></li>
+                            <li>Price Protection (5 Years)</li>
+                            <li>90-Day Money-Back Guarantee</li>
+                            <li><strong>5 Year Agreement</strong></li>
+                        </ul>
+                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Solo Enterprise"
                             data-price="7900">Select Plan</button>
                     </div>
-<p>                    <!-- Plan D --></p>
-<div class="pricing-card bg-black text-white">
-<h4 class="text-accent">Plan D: Clinic Enterprise</h4>
-<div class="price">R7,900 <span class="text-white">Base Setup</span></div>
-<p class="text-sm">+ R4,750 per extra doctor</p>
-<div class="doctor-count-wrapper mb-3">
-                            <label class="text-white">Number of Extra Doctors:</label><br />
+                </div>
+            </div>
+
+            <!-- Plan D -->
+            <div class="pricing-row">
+                <div class="grid-2">
+                    <div class="plan-description">
+                        <img src="https://placehold.co/600x400/000000/cfff04?text=Clinic+Enterprise" alt="Clinic Enterprise" class="plan-image">
+                        <h3 class="text-black">Clinic Enterprise</h3>
+                        <p>The complete institutional package. Benefit from dedicated priority support, advanced custom connections, and the best value for growing medical teams with locked-in rates.</p>
+                    </div>
+                    <div class="pricing-card bg-black text-white">
+                        <h4 class="text-accent">Plan D: Clinic Enterprise</h4>
+                        <div class="price">R7,900 <span class="text-white">Base Setup</span></div>
+                        <p class="text-sm">+ R4,750 per extra doctor</p>
+                        <div class="doctor-count-wrapper mb-3">
+                            <label class="text-white">Number of Extra Doctors:</label>
                             <input type="number" min="0" value="0" class="doctor-input p-2 rounded text-black w-100"
-                                data-base="7900" data-per="4750"></p>
-<p class="text-accent mt-2">Total Setup: <span class="dynamic-total">R7,900</span></p>
-</p></div>
-<ul class="styled-list text-sm">
-<li><strong>Free Custom Connections</strong></li>
-<li>Locked-In Prices (5 Years)</li>
-<li>Priority Dedicated Support</li>
-<li><strong>5 Year Agreement</strong></li>
-</ul>
-<p>                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Clinic Enterprise"
+                                data-base="7900" data-per="4750">
+                            <p class="text-accent mt-2">Total Setup: <span class="dynamic-total">R7,900</span></p>
+                        </div>
+                        <ul class="styled-list text-sm">
+                            <li><strong>Free Custom Connections</strong></li>
+                            <li>Locked-In Prices (5 Years)</li>
+                            <li>Priority Dedicated Support</li>
+                            <li><strong>5 Year Agreement</strong></li>
+                        </ul>
+                        <button class="btn btn-primary w-100 mt-4 select-plan-btn" data-plan="Clinic Enterprise"
                             data-price="7900" data-is-dynamic="true">Select Plan</button>
                     </div>
-</p></div>
-</p></div>
+                </div>
+            </div>
 </p></div>
 </section>
 <p>    <!-- Payment Gateway Section (Hidden by default, shown on selection) --></p>
@@ -733,8 +767,6 @@ input[type="checkbox"] {
         </div>
 </section>
 </div>
-<p><!-- Load Custom JS for Pricing Calculation and Gateways --><br />
-<script src="pricing-page-js.js"></script></p>
 		</div>
 
 			</div>
@@ -953,37 +985,6 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 //# sourceURL=https://health.zibukeafrica.com/wp-includes/js/wp-emoji-loader.min.js
 </script>
 
-<style>
 
-/* Zibuke Health - Final Visibility Fix */
-.bg-accent, .bg-accent p, .bg-accent label, .bg-accent span, .bg-accent li, .bg-accent h1, .bg-accent h2, .bg-accent h3 {
-    color: #000000 !important;
-}
-.bg-white, .bg-white p, .bg-white label, .bg-white span, .bg-white li, .bg-white h1, .bg-white h2, .bg-white h3 {
-    color: #000000 !important;
-}
-
-.bg-black, .bg-black p, .bg-black label, .bg-black span, .bg-black li, .bg-black h1, .bg-black h2,
-.bg-dark, .bg-dark p, .bg-dark label, .bg-dark span, .bg-dark li, .bg-dark h1, .bg-dark h2,
-.bg-accent .bg-black, .bg-accent .bg-black *,
-.bg-white .bg-black, .bg-white .bg-black * {
-    color: #ffffff !important;
-}
-
-.text-accent, .bg-black h3, .bg-black h4, .bg-dark h3, .bg-dark h4 {
-    color: #cfff04 !important;
-}
-
-input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]), select, textarea {
-    color: inherit !important;
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(128, 128, 128, 0.5) !important;
-}
-.bg-accent input:not([type="submit"]), .bg-white input:not([type="submit"]) {
-    background-color: rgba(0, 0, 0, 0.05) !important;
-    border-color: rgba(0, 0, 0, 0.2) !important;
-}
-
-</style>
 </body>
 </html>

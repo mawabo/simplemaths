@@ -18,6 +18,16 @@
     color: #cfff04 !important;
 }
 
+/* Gray text on black background fix */
+.bg-black .text-gray-500,
+.bg-black .price span,
+.bg-black .text-sm,
+.bg-black .text-gray-400,
+.pricing-card span,
+.pricing-card p.text-sm {
+    color: #cfff04 !important;
+}
+
 input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]), select, textarea {
     color: inherit !important;
     background-color: rgba(255, 255, 255, 0.1) !important;
@@ -26,4 +36,53 @@ input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]), select, t
 .bg-accent input:not([type="submit"]), .bg-white input:not([type="submit"]) {
     background-color: rgba(0, 0, 0, 0.05) !important;
     border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Plan Enhancement Styles */
+.plan-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.plan-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+}
+.pricing-row {
+    background: #fdfdfd;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 1px solid #eee;
+}
+
+/* Button & Form Improvements */
+button[type="submit"], input[type="submit"] {
+    background-color: #cfff04 !important;
+    color: #000 !important;
+    padding: 15px 30px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    width: 100% !important;
+    transition: background-color 0.3s, transform 0.1s !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-top: 10px !important;
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover {
+    background-color: #b5de04 !important;
+    transform: translateY(-2px) !important;
+}
+
+input:not([type="submit"]), select, textarea {
+    padding: 12px !important;
+    border-radius: 6px !important;
+    margin-bottom: 10px !important;
 }
